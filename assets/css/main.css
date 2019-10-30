@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
-		color: #919499;
+		color: #4e4e4e;
 		font-size: 14pt;
 		line-height: 1.75em;
 		letter-spacing: 0.025em;
@@ -1610,12 +1610,25 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
+        .image.centered img {
+            margin: 0 auto;
+            width: auto;
+        }
 
-		.image.featured {
+        .image.featured.pfp img {
+            display: block;
+            height: 100%;
+            width: auto;
+            margin: 0 auto;
+            border-radius: 50%;
+		}
+
+		.image.featured.pfp {
+			display: block;
+			height: 200px;
+			margin: 0 0 2em 0;
+		}
+        .image.featured {
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
@@ -1672,7 +1685,7 @@ input, select, textarea {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #381e49 url("images/overlay.png");
+			background: #45A29E url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -1681,7 +1694,7 @@ input, select, textarea {
 			input[type="reset"].style1:hover,
 			button.style1:hover,
 			.button.style1:hover {
-				background-color: #f98780;
+				background-color: #388888;
 			}
 
 			input[type="button"].style1:active,
@@ -1689,7 +1702,7 @@ input, select, textarea {
 			input[type="reset"].style1:active,
 			button.style1:active,
 			.button.style1:active {
-				background-color: #d96760;
+				background-color: #388888;
 			}
 
 		input[type="button"].style2,
@@ -1823,66 +1836,7 @@ input, select, textarea {
 			text-align: center;
 		}
 
-/* Feature List */
 
-	.feature-list {
-		max-width: 58em;
-		margin-left: auto;
-		margin-right: auto;
-		position: relative;
-		top: 0.75em;
-	}
-
-		.feature-list section {
-			border-top: solid 1px #eee;
-			padding-top: 3em;
-			padding-left: 5em;
-			position: relative;
-		}
-
-		@media screen and (min-width: 981px) {
-
-			.feature-list > .row > :nth-child(-n + 2) > section {
-				border-top: 0;
-				padding-top: 0;
-			}
-
-		}
-
-		.feature-list h3 {
-			color: #381e49 !important;
-			margin: -0.35em 0 0.75em 0;
-			font-size: 1.15em;
-			letter-spacing: 0.05em;
-		}
-
-			.feature-list h3:before {
-				display: block;
-				color: #fff;
-				background: #2f333b url("images/overlay.png");
-				border-radius: 2.5em;
-				text-align: center;
-				width: 2.5em;
-				height: 2.5em;
-				line-height: 2.5em;
-				margin-right: 0.75em;
-				position: absolute;
-				left: 0;
-				margin-top: -0.5em;
-			}
-
-		.feature-list.small section {
-			padding-left: 3.5em;
-		}
-
-		.feature-list.small h3:before {
-			font-size: 0.8em;
-		}
-
-/* Icons */
-
-	.icon {
-		text-decoration: none;
 		text-decoration: none;
 	}
 
@@ -1955,7 +1909,7 @@ input, select, textarea {
 
 	.wrapper {
 		position: relative;
-		padding: 6em 0 9em 0;
+		padding: 6em 0 2em 0;
 	}
 
 		.wrapper .title {
@@ -2002,13 +1956,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #381e49 url("images/overlay.png");
+			background: #45A29E url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #381e49 url("images/overlay.png");
+				background: #45A29E url("images/overlay.png");
 				color: #fff;
 			}
 
@@ -2017,21 +1971,21 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background: #fff;
+			background: #1F2833;
 		}
 
 			.wrapper.style2 .title {
-				background: #fff;
-				color: #484d55;
+				background: #1F2833;
+				color: #66FCF1;
 			}
 
 		.wrapper.style3 {
-			background: #f3f3f3 url("images/overlay.png");
+			background: #C5C6C7 url("images/overlay.png");
 		}
 
 			.wrapper.style3 .title {
-				background: #f3f3f3 url("images/overlay.png");
-				color: #484d55;
+				background: #C5C6C7 url("images/overlay.png");
+				color: #1F2833;
 			}
 
 			.wrapper.style3 .image {
@@ -2230,7 +2184,7 @@ input, select, textarea {
 			letter-spacing: 0.075em;
 			line-height: 1.35em;
 			padding: 1em 0 1em 0;
-			margin-bottom: 1em;
+			margin-bottom: 0em;
 		}
 
 			#intro p.style2 a {
@@ -2261,7 +2215,7 @@ input, select, textarea {
 	}
 
 		#highlights .highlight h3 {
-			color: #381e49;
+			color: #1F2833;
 			margin: 0 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
@@ -2272,71 +2226,20 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #282b34 url("images/overlay.png");
+		background: #0B0C10 url("images/overlay.png");
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
-		padding-bottom: 6em;
+		padding-bottom: 1em;
 	}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {
-			color: #fff;
+			color: #45A29E;
 		}
 
 		#footer hr {
 			border-top-color: #333;
 			border-top-color: rgba(255, 255, 255, 0.05);
 		}
-
-		#footer form input[type="text"],
-		#footer form input[type="email"],
-		#footer form input[type="password"],
-		#footer form select,
-		#footer form textarea {
-			background: #ccc;
-			box-shadow: none;
-		}
-
-			#footer form input[type="text"]:focus,
-			#footer form input[type="email"]:focus,
-			#footer form input[type="password"]:focus,
-			#footer form select:focus,
-			#footer form textarea:focus {
-				background: #fff;
-			}
-
-		#footer input[type="button"],
-		#footer input[type="submit"],
-		#footer input[type="reset"],
-		#footer button,
-		#footer .button {
-			color: #fff;
-			box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.5);
-		}
-
-			#footer input[type="button"]:hover,
-			#footer input[type="submit"]:hover,
-			#footer input[type="reset"]:hover,
-			#footer button:hover,
-			#footer .button:hover {
-				color: #fff;
-				box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.65);
-			}
-
-			#footer input[type="button"]:active,
-			#footer input[type="submit"]:active,
-			#footer input[type="reset"]:active,
-			#footer button:active,
-			#footer .button:active {
-				box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.75);
-			}
-
-			#footer input[type="button"].style2:active,
-			#footer input[type="submit"].style2:active,
-			#footer input[type="reset"].style2:active,
-			#footer button.style2:active,
-			#footer .button.style2:active {
-				box-shadow: inset 0px 0px 2px 0px rgba(255, 255, 255, 0.75);
-			}
 
 		#footer .title {
 			background: #282b34 url("images/overlay.png");
@@ -2373,8 +2276,8 @@ input, select, textarea {
 
 	#copyright {
 		text-align: center;
-		padding-top: 6em;
-		margin-top: 6em;
+		padding-top: 2em;
+		margin-top: 2em;
 		border-top: solid 1px rgba(255, 255, 255, 0.05);
 	}
 
@@ -2949,7 +2852,7 @@ input, select, textarea {
 
 				#footer header.style1 {
 					padding-bottom: 0;
-					margin-bottom: 2em;
+					margin-bottom: 1em;
 					border-bottom: 0;
 				}
 
