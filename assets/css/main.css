@@ -1456,21 +1456,49 @@ input, select, textarea {
 		padding: 3em 0 3em 0;
 	}
 
-		header.style1 h2 {
+	header.style1 h2 {
 			font-weight: 700;
 			font-size: 2em;
 			letter-spacing: 0.075em;
 			line-height: 1.5em;
-		}
+	}
 
-		header.style1 p {
-			color: #b1b4b9;
-			display: block;
-			margin: 1.15em 0 0 0;
-			font-size: 1.3em;
+	header.style1 p {
+		color: #b1b4b9;
+		display: block;
+		margin: 1.15em 0 0 0;
+		font-size: 1.3em;
+		letter-spacing: 0.075em;
+		line-height: 1.5em;
+	}
+header.style2 p {
+		color: #4ff4c9;
+		display: block;
+		margin: 1.15em 0 0 0;
+		font-size: 1.3em;
+		letter-spacing: 0.075em;
+		line-height: 1.5em;
+	}
+	header.style2 {
+		text-align: center;
+		padding: 3em 0 3em 0;
+	}
+
+	header.style2 h2 {
+			font-weight: 700;
+			font-size: 2em;
 			letter-spacing: 0.075em;
 			line-height: 1.5em;
-		}
+	}
+
+header.style2 p {
+		color: #4ff4c9;
+		display: block;
+		margin: 1.15em 0 0 0;
+		font-size: 1.3em;
+		letter-spacing: 0.075em;
+		line-height: 1.5em;
+	}
 
 /* Icon */
 
@@ -1762,7 +1790,7 @@ input, select, textarea {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: #45A29E url("images/overlay.png");
+			background: #DC6445 url("images/overlay.png");
 			color: #fff;
 		}
 
@@ -2033,27 +2061,29 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: #45A29E url("images/overlay.png");
+			background: #DC6445 url("images/overlay.png");
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: #45A29E url("images/overlay.png");
+				background: #DC6445 url("images/overlay.png");
 				color: #fff;
 			}
 
 			.wrapper.style1 h1, .wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6, .wrapper.style1 strong, .wrapper.style1 b, .wrapper.style1 a {
 				color: #fff;
 			}
-
+			.wrapper.style1 .image {
+				border: solid 10px #1F2833;
+			}
 		.wrapper.style2 {
 			background: #1F2833;
 		}
 
 			.wrapper.style2 .title {
 				background: #1F2833;
-				color: #66FCF1;
+				color: #C5C6C7;
 			}
 
 		.wrapper.style3 {
@@ -2310,7 +2340,7 @@ input, select, textarea {
 	}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {
-			color: #45A29E;
+			color: #DC6445;
 		}
 
 		#footer hr {
